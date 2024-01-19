@@ -208,7 +208,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
     Instagram = ""
     Facebook = ""
     Telegram = ""
-    Medium = ""
+    Medium = "xxxx"
     Gitlab = ""
     Youtubelegacy = ""
     Youtubecustom = ""
@@ -642,6 +642,7 @@ posts = ":filename"
         [languages.en.params.social]
           GitHub = "fabianzorn"
           Linkedin = "fabian-zorn"
+          Medium = "@fabianzorn"
           Strava = "35100417"
           Stackoverflow = "21193777/fabian-zorn"
 
@@ -720,5 +721,6 @@ posts = ":filename"
         [languages.de.params.social]
           GitHub = "fabianzorn"
           Linkedin = "fabian-zorn"
+          Medium = "@fabianzorn"
           Strava = "35100417"
           Stackoverflow = "21193777/fabian-zorn"
