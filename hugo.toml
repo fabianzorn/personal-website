@@ -181,7 +181,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
       # Gravatar Email for preferred avatar in home page
       gravatarEmail = ""
       # URL of avatar shown in home page
-      avatarURL = ""
+      avatarURL = "/images/avatar.png"
       # LoveIt CHANGED | 0.2.7 title shown in home page (HTML format is supported)
       title = ""
       # subtitle shown in home page (HTML format is supported)
@@ -634,7 +634,7 @@ posts = ":filename"
         [languages.en.params.home.profile]
           enable = true
           gravatarEmail = ""
-          avatarURL = ""
+          avatarURL = "/images/avatar.png"
           title = ""
           subtitle = "Hi, I'm Fabian Zorn. This is my personal blog."
           typeit = true
@@ -713,7 +713,7 @@ posts = ":filename"
         [languages.de.params.home.profile]
           enable = true
           gravatarEmail = ""
-          avatarURL = ""
+          avatarURL = "/images/avatar.png"
           title = ""
           subtitle = "Hallo, ich bin Fabian Zorn. Das ist mein persönlicher Blog."
           typeit = true
