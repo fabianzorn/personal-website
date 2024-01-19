@@ -1,6 +1,6 @@
 baseURL = "http://example.org/"
 theme = "LoveIt"
-title = "Personal Website"
+title = "Fabian Zorn"
 
 # language code ["en", "zh-CN", "fr", "pl", ...]
 languageCode = "en"
@@ -77,9 +77,9 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
   # LoveIt NEW | 0.2.0 date format
   dateFormat = "2006-01-02"
   # website title for Open Graph and Twitter Cards
-  title = "My cool site"
+  title = "Personal Website"
   # website description for RSS, SEO, Open Graph and Twitter Cards
-  description = "This is my cool site"
+  description = ""
   # website images for Open Graph and Twitter Cards
   images = ["/logo.png"]
 
@@ -109,16 +109,17 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
     # LoveIt NEW | 0.2.0 whether to show the author
     author = true
     # Site creation time
-    since = 2019
+    since = 2023
     # ICP info only in China (HTML format is supported)
     icp = ""
     # license info (HTML format is supported)
-    license = '<a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a>'
+    # '<a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a>'
+    license = ''
 
   # LoveIt NEW | 0.2.0 Section (all posts) page config
   [params.section]
     # special amount of posts in each section page
-    paginate = 20
+    paginate = 6
     # date format (month and day)
     dateFormat = "01-02"
     # amount of RSS pages
@@ -127,7 +128,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
   # LoveIt NEW | 0.2.0 List (category or tag) page config
   [params.list]
     # special amount of posts in each list page
-    paginate = 20
+    paginate = 10
     # date format (month and day)
     dateFormat = "01-02"
     # amount of RSS pages
@@ -136,9 +137,9 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
   # LoveIt NEW | 0.2.0 App icon config
   [params.app]
     # optional site title override for the app when added to an iOS home screen or Android launcher
-    title = "My cool site"
+    title = "Personal Website"
     # whether to omit favicon resource links
-    noFavicon = false
+    noFavicon = true
     # modern SVG favicon to use in place of older style .png and .ico files
     svgFavicon = ""
     # Android browser theme color
@@ -180,11 +181,11 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
       # Gravatar Email for preferred avatar in home page
       gravatarEmail = ""
       # URL of avatar shown in home page
-      avatarURL = "/images/avatar.png"
+      avatarURL = ""
       # LoveIt CHANGED | 0.2.7 title shown in home page (HTML format is supported)
       title = ""
       # subtitle shown in home page (HTML format is supported)
-      subtitle = "This is My New Hugo Site"
+      subtitle = ""
       # whether to use typeit animation for subtitle
       typeit = true
       # whether to show social links
@@ -346,20 +347,20 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
       enable = true
       Twitter = true
       Facebook = true
-      Linkedin = false
+      Linkedin = true
       Whatsapp = false
       Pinterest = false
       Tumblr = false
-      HackerNews = true
+      HackerNews = false
       Reddit = false
       VK = false
       Buffer = false
-      Xing = false
-      Line = true
+      Xing = true
+      Line = false
       Instapaper = false
       Pocket = false
       Flipboard = false
-      Weibo = true
+      Weibo = false
       Blogger = false
       Baidu = false
       Odnoklassniki = false
@@ -633,7 +634,7 @@ posts = ":filename"
         [languages.en.params.home.profile]
           enable = true
           gravatarEmail = ""
-          avatarURL = "/images/avatar.png"
+          avatarURL = ""
           title = ""
           subtitle = "Hi, I'm Fabian Zorn. This is my personal blog."
           typeit = true
@@ -712,7 +713,7 @@ posts = ":filename"
         [languages.de.params.home.profile]
           enable = true
           gravatarEmail = ""
-          avatarURL = "/images/avatar.png"
+          avatarURL = ""
           title = ""
           subtitle = "Hallo, ich bin Fabian Zorn. Das ist mein persönlicher Blog."
           typeit = true

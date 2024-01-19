@@ -1,6 +1,6 @@
 ---
 weight: 4
-title: "Git"
+title: "Git Befehle"
 date: 2023-07-24T21:55:17+02:00
 draft: false
 description: "Git"
