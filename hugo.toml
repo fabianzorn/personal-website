@@ -1,4 +1,4 @@
-baseURL = "http://example.org/"
+baseURL = "https://fabianzorn.github.io/website/"
 theme = "LoveIt"
 title = "Fabian Zorn"
 
@@ -77,7 +77,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
   # LoveIt NEW | 0.2.0 date format
   dateFormat = "2006-01-02"
   # website title for Open Graph and Twitter Cards
-  title = "Personal Website"
+  title = "Personal Blog"
   # website description for RSS, SEO, Open Graph and Twitter Cards
   description = ""
   # website images for Open Graph and Twitter Cards
@@ -137,9 +137,9 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
   # LoveIt NEW | 0.2.0 App icon config
   [params.app]
     # optional site title override for the app when added to an iOS home screen or Android launcher
-    title = "Personal Website"
+    title = "Personal Blog"
     # whether to omit favicon resource links
-    noFavicon = true
+    noFavicon = false
     # modern SVG favicon to use in place of older style .png and .ico files
     svgFavicon = ""
     # Android browser theme color
