@@ -2,11 +2,6 @@ baseURL = "https://fabianzorn.github.io/website/"
 theme = "LoveIt"
 title = "Fabian Zorn"
 
-# language code ["en", "zh-CN", "fr", "pl", ...]
-languageCode = "en"
-languageName = "English"
-hasCJKLanguage = false
-
 paginate = 12
 googleAnalytics = ""
 copyright = ""
@@ -572,7 +567,7 @@ posts = ":filename"
     weight = 1
     languageCode = "en"
     languageName = "English"
-    hasCJKLanguage = false
+    hasCJKLanguage = true
     copyright = "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License."
     [languages.en.menu]
       [[languages.en.menu.main]]
