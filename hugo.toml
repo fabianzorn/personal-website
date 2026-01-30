@@ -165,7 +165,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
 
   # LoveIt NEW | 0.2.0 Search config
   [params.search]
-    enable = true
+    enable = false
     # type of search engine ["lunr", "algolia"]
     type = "lunr"
     # max index length of the chunked content
@@ -365,8 +365,8 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
     # LoveIt CHANGED | 0.2.0 social share links in post page
     [params.page.share]
       enable = true
-      X = true
-      Threads = true
+      X = false
+      Threads = false
       Facebook = true
       Linkedin = true
       Whatsapp = false
