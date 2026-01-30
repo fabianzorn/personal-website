@@ -1,19 +1,27 @@
 baseURL = "https://fabianzorn.com/"
+
+# Change the default theme to be use when building the site with Hugo
 theme = "LoveIt"
+
+# The Website title
 title = "Fabian Zorn"
 
-paginate = 12
-googleAnalytics = ""
-copyright = ""
+# The pagination config
+[pagination]
+  pagerSize = 12
+  disableAliases = false
+  path = "page"
+  googleAnalytics = ""
+  copyright = ""
 
+# whether to use robots.txt
 enableRobotsTXT = true
+# whether to use git commit log
 enableGitInfo = true
+# whether to use emoji code
 enableEmoji = true
+# ignore some build errors
 ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
-
-# Author config
-[author]
-  name = "Fabian Zorn"
 
 [module]
   [module.hugoVersion]
@@ -78,6 +86,12 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
   # website images for Open Graph and Twitter Cards
   images = ["/logo.png"]
 
+  # Author config
+  [params.author]
+    name = "Fabian Zorn"
+    email = ""
+    link = ""
+
   # Header config
   [params.header]
     # desktop header mode ["fixed", "normal", "auto"]
@@ -86,25 +100,30 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
     mobileMode = "auto"
     # LoveIt NEW | 0.2.0 Header title config
     [params.header.title]
+      # URL of the LOGO
       logo = ""
+      # title name
       name = "Fabian Zorn"
+      # you can add extra information before the name (HTML format is supported), such as icons
       pre = ""
+      # you can add extra information after the name (HTML format is supported), such as icons
       post = ""
+      # whether to use typeit animation for title name
       typeit = false
 
   # Footer config
   [params.footer]
     enable = true
-    # LoveIt NEW | 0.2.0 Custom content (HTML format is supported)
+    # Custom content (HTML format is supported)
     custom = ''
-    # LoveIt NEW | 0.2.0 whether to show Hugo and theme info
+    # whether to show Hugo and theme info
     hugo = true
-    # LoveIt NEW | 0.2.0 whether to show copyright info
+    # whether to show copyright info
     copyright = true
-    # LoveIt NEW | 0.2.0 whether to show the author
+    # whether to show the author
     author = true
     # Site creation time
-    since = 2023
+    since = '2024'
     # ICP info only in China (HTML format is supported)
     icp = ""
     # license info (HTML format is supported)
@@ -120,7 +139,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
     # amount of RSS pages
     rss = 10
 
-  # LoveIt NEW | 0.2.0 List (category or tag) page config
+  # List (category or tag) page config
   [params.list]
     # special amount of posts in each list page
     paginate = 10
@@ -129,7 +148,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
     # amount of RSS pages
     rss = 10
 
-  # LoveIt NEW | 0.2.0 App icon config
+  # App icon config
   [params.app]
     # optional site title override for the app when added to an iOS home screen or Android launcher
     title = "Personal Blog"
@@ -153,13 +172,13 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
     contentLength = 4000
     # placeholder of the search bar
     placeholder = ""
-    # LoveIt NEW | 0.2.1 max number of results length
+    # max number of results length
     maxResultLength = 10
-    # LoveIt NEW | 0.2.3 snippet length of the result
+    # snippet length of the result
     snippetLength = 30
-    # LoveIt NEW | 0.2.1 HTML tag name of the highlight part in results
+    # HTML tag name of the highlight part in results
     highlightTag = "em"
-    # LoveIt NEW | 0.2.4 whether to use the absolute URL based on the baseURL in search index
+    # whether to use the absolute URL based on the baseURL in search index
     absoluteURL = false
     [params.search.algolia]
     index = ""
@@ -168,7 +187,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
 
   # Home page config
   [params.home]
-    # LoveIt NEW | 0.2.0 amount of RSS pages
+    # amount of RSS pages
     rss = 10
     # Home page profile
     [params.home.profile]
@@ -192,7 +211,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
       enable = true
       # special amount of posts in each home posts page
       paginate = 6
-      # LoveIt DELETED | 0.2.0 replaced with hiddenFromHomePage in params.page
+      # replaced with hiddenFromHomePage in params.page
       # default behavior when you don't set "hiddenFromHomePage" in front matter
       defaultHiddenFromHomePage = false
 
@@ -200,7 +219,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
   [params.social]
     GitHub = "xxxx"
     Linkedin = "xxxx"
-    Twitter = ""
+    X = ""
     Instagram = ""
     Facebook = ""
     Telegram = ""
@@ -270,31 +289,37 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
     Plume = ""
     HackTheBox = ""
     RootMe= ""
+    Malt = ""
+    TikTok = ""
+    TryHackMe = ""
+    Codeberg = ""
+    HuggingFace = ""
+    Threads = ""
     Phone = ""
     Email = ""
-    RSS = false # LoveIt NEW | 0.2.0
+    RSS = false
 
-  # LoveIt CHANGED | 0.2.0 Page global config
+  # Page global config
   [params.page]
-    # LoveIt NEW | 0.2.0 whether to hide a page from home page
+    # whether to hide a page from home page
     hiddenFromHomePage = false
-    # LoveIt NEW | 0.2.0 whether to hide a page from search results
+    # whether to hide a page from search results
     hiddenFromSearch = false
-    # LoveIt NEW | 0.2.0 whether to enable twemoji
+    # whether to enable twemoji
     twemoji = false
     # whether to enable lightgallery
     lightgallery = false
-    # LoveIt NEW | 0.2.0 whether to enable the ruby extended syntax
+    # whether to enable the ruby extended syntax
     ruby = true
-    # LoveIt NEW | 0.2.0 whether to enable the fraction extended syntax
+    # whether to enable the fraction extended syntax
     fraction = true
-    # LoveIt NEW | 0.2.0 whether to enable the fontawesome extended syntax
+    # whether to enable the fontawesome extended syntax
     fontawesome = true
     # whether to show link to Raw Markdown content of the content
     linkToMarkdown = true
-    # LoveIt NEW | 0.2.4 whether to show the full text content in RSS
+    # whether to show the full text content in RSS
     rssFullText = false
-    # LoveIt NEW | 0.2.0 Table of the contents config
+    # Table of the contents config
     [params.page.toc]
       # whether to enable the table of the contents
       enable = true
@@ -302,26 +327,26 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
       keepStatic = true
       # whether to make the table of the contents in the sidebar automatically collapsed
       auto = true
-    # LoveIt CHANGED | 0.2.0 KaTeX mathematical formulas
+    # KaTeX mathematical formulas
     [params.page.math]
       enable = true
-      # LoveIt CHANGED | 0.2.11 default inline delimiter is $ ... $ and \( ... \)
+      # default inline delimiter is $ ... $ and \( ... \)
       inlineLeftDelimiter = ""
       inlineRightDelimiter = ""
-      # LoveIt CHANGED | 0.2.11 default block delimiter is $$ ... $$, \[ ... \], \begin{equation} ... \end{equation} and some other functions
+      # default block delimiter is $$ ... $$, \[ ... \], \begin{equation} ... \end{equation} and some other functions
       blockLeftDelimiter = ""
       blockRightDelimiter = ""
       # KaTeX extension copy_tex
       copyTex = true
       # KaTeX extension mhchem
       mhchem = true
-    # LoveIt NEW | 0.2.0 Code config
+    # Code config
     [params.page.code]
       # whether to show the copy button of the code block
       copy = true
       # the maximum number of lines of displayed code by default
       maxShownLines = 50
-    # LoveIt NEW | 0.2.0 Mapbox GL JS config
+    # Mapbox GL JS config
     [params.page.mapbox]
       # access token of Mapbox GL JS
       accessToken = ""
@@ -340,7 +365,8 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
     # LoveIt CHANGED | 0.2.0 social share links in post page
     [params.page.share]
       enable = true
-      Twitter = true
+      X = true
+      Threads = true
       Facebook = true
       Linkedin = true
       Whatsapp = false
@@ -362,8 +388,10 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
       Evernote = false
       Skype = false
       Trello = false
+      Diaspora = false
       Mix = false
-    # LoveIt CHANGED | 0.2.0 Comment config
+      Telegram = false
+    # Comment config
     [params.page.comment]
       enable = false
       # Disqus comment config
@@ -374,7 +402,6 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
         shortname = ""
       # Gitalk comment config
       [params.page.comment.gitalk]
-        # LoveIt NEW | 0.1.1
         enable = false
         owner = ""
         repo = ""
@@ -396,7 +423,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
         highlight = true
         enableQQ = false
         serverURLs = ""
-        # LoveIt NEW | 0.2.6 emoji data file name, default is "google.yml"
+        # emoji data file name, default is "google.yml"
         # ["apple.yml", "google.yml", "facebook.yml", "twitter.yml"]
         # located in "themes/LoveIt/assets/lib/valine/emoji/" directory
         # you can store your own data files in the same path under your project:
@@ -410,7 +437,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
         appId = ""
         # automatically adapt the current theme i18n configuration when empty
         languageCode = ""
-      # LoveIt NEW | 0.2.0 Telegram comments config
+      # Telegram comments config
       [params.page.comment.telegram]
         enable = false
         siteID = ""
@@ -420,10 +447,10 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
         colorful = true
         dislikes = false
         outlined = false
-      # LoveIt NEW | 0.2.0 Commento comment config
+      # Commento comment config
       [params.page.comment.commento]
         enable = false
-      # LoveIt NEW | 0.2.5 utterances comment config
+      # utterances comment config
       [params.page.comment.utterances]
         enable = false
         # owner/repo
@@ -449,7 +476,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
         lazyLoading = false
         lightTheme = "light"
         darkTheme = "dark"
-    # LoveIt NEW | 0.2.7 Third-party library config
+    # Third-party library config
     [params.page.library]
       [params.page.library.css]
         # someCSS = "some.css"
@@ -461,7 +488,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
         # located in "assets/"
         # Or
         # someJavascript = "https://cdn.example.com/some.js"
-    # LoveIt CHANGED | 0.2.10 Page SEO config
+    # Page SEO config
     [params.page.seo]
       # image URL
       images = []
@@ -469,7 +496,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
       [params.page.seo.publisher]
         name = ""
         logoUrl = ""
-  # LoveIt NEW | 0.2.5 TypeIt config
+  # TypeIt config
   [params.typeit]
     # typing speed between each step (measured in milliseconds)
     speed = 100
@@ -488,16 +515,58 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
     pinterest = ""
     baidu = ""
 
-  # LoveIt NEW | 0.2.10 Site SEO config
+  # Site SEO config
   [params.seo]
     # image URL
     image = ""
     # thumbnail URL
     thumbnailUrl = ""
 
-  # LoveIt NEW | 0.2.0 Analytics config
+  # Analytics config
   [params.analytics]
     enable = false
+    # Google Analytics
+    [params.analytics.google]
+      id = ""
+      # LoveIt NEW | 0.3.1 whether to respect the browser’s “do not track” setting
+      respectDoNotTrack = false
+    # Fathom Analytics
+    [params.analytics.fathom]
+      id = ""
+      # server url for your tracker if you're self hosting
+      server = ""
+    # Plausible Analytics
+    [params.analytics.plausible]
+    dataDomain = ""
+    # Yandex Metrica
+    [params.analytics.yandexMetrica]
+    id = ""
+
+  # LoveIt NEW | 0.2.7 Cookie consent config
+  [params.cookieconsent]
+    enable = true
+  # text strings used for Cookie consent banner
+  [params.cookieconsent.content]
+    message = ""
+    dismiss = ""
+    link = ""
+
+  # CDN config for third-party library files
+  [params.cdn]
+    # CDN data file name, disabled by default
+    # ["jsdelivr.yml"]
+    # located in "themes/LoveIt/assets/data/cdn/" directory
+    # you can store your own data files in the same path under your project:
+    # "assets/data/cdn/"
+    data = ""
+
+  # Compatibility config
+  [params.compatibility]
+    # whether to use Polyfill.io to be compatible with older browsers
+    polyfill = false
+    # whether to use object-fit-images to be compatible with older browsers
+    objectFit = false
+
 
 [markup]
   # Syntax Highlighting (https://gohugo.io/content-management/syntax-highlighting)
@@ -523,8 +592,9 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
       unsafe = true
     [markup.tableOfContents]
       startLevel = 2
-      endLevel = 6# Markup related configuration in Hugo
+      endLevel = 6
 
+# Sitemap config
 [sitemap]
   changefreq = "weekly"
   filename = "sitemap.xml"
@@ -533,12 +603,12 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
 # Permalinks config (https://gohugo.io/content-management/urls/#permalinks)
 [Permalinks]
 # posts = ":year/:month/:filename"
-posts = ":filename"
+posts = ":contentbasename"
 
 # Privacy config (https://gohugo.io/about/hugo-and-gdpr/)
 [privacy]
   [privacy.googleAnalytics]
-  [privacy.twitter]
+  [privacy.x]
     enableDNT = true
   [privacy.youtube]
     privacyEnhanced = true
@@ -560,7 +630,6 @@ posts = ":filename"
   page = ["HTML", "MarkDown"]
   section = ["HTML", "RSS"]
   taxonomy = ["HTML", "RSS"]
-  taxonomyTerm = ["HTML"]
 
 [languages]
   [languages.en]

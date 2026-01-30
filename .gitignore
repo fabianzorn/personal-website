@@ -1,1 +1,42 @@
-.idea
+# -------------------------------------------------
+# Hugo build output
+# -------------------------------------------------
+public/
+/resources/_gen/
+
+# Hugo caches (seit neueren Versionen)
+.hugo_build.lock
+.hugo_stats.json
+
+# -------------------------------------------------
+# Node / Frontend tooling (LoveIt nutzt npm optional)
+# -------------------------------------------------
+node_modules/
+npm-debug.log*
+yarn-error.log*
+
+# -------------------------------------------------
+# OS / Editor
+# -------------------------------------------------
+.DS_Store
+Thumbs.db
+
+# IntelliJ / JetBrains
+.idea/
+*.iml
+
+# VS Code
+.vscode/
+
+# -------------------------------------------------
+# Temporary / local tooling
+# -------------------------------------------------
+.env
+.env.*
+*.log
+
+# -------------------------------------------------
+# Local Hugo binaries (falls du Versions-Wrapping nutzt)
+# -------------------------------------------------
+hugo
+hugo.exe
