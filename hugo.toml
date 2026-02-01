@@ -163,7 +163,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
     # Windows v8-10 tile color
     tileColor = "#da532c"
 
-  # LoveIt NEW | 0.2.0 Search config
+  # Search config
   [params.search]
     enable = false
     # type of search engine ["lunr", "algolia"]
@@ -681,7 +681,7 @@ posts = ":contentbasename"
         title = "GitHub"
     [languages.en.params]
       [languages.en.params.search]
-        enable = true
+        enable = false
         type = "algolia"
         contentLength = 4000
         placeholder = ""
@@ -760,7 +760,7 @@ posts = ":contentbasename"
         title = "GitHub"
     [languages.de.params]
       [languages.de.params.search]
-        enable = true
+        enable = false
         type = "algolia"
         contentLength = 4000
         placeholder = ""
